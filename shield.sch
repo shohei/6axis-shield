@@ -769,54 +769,63 @@
 <library name="molex">
 <description>Molex Connectors</description>
 <packages>
-<package name="5267-3">
+<package name="5267-4">
 <wire x1="1.27" y1="1.27" x2="1.27" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-0.635" y1="-1.27" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-1.905" y1="-1.27" x2="-3.175" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-3.175" y1="-1.27" x2="-3.81" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="-0.635" x2="-4.445" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-4.445" y1="-1.27" x2="-5.715" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-5.715" y1="-1.27" x2="-6.35" y2="-0.635" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="-0.635" x2="-6.35" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-6.35" y1="1.27" x2="1.27" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="1.905" x2="1.905" y2="1.905" width="0.127" layer="21"/>
+<wire x1="-6.35" y1="-0.635" x2="-6.985" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-6.985" y1="-1.27" x2="-8.255" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-8.255" y1="-1.27" x2="-8.89" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="-0.635" x2="-8.89" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="1.27" x2="1.27" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-9.525" y1="1.905" x2="1.905" y2="1.905" width="0.127" layer="21"/>
 <wire x1="1.905" y1="1.905" x2="1.905" y2="-0.635" width="0.127" layer="21"/>
 <wire x1="1.905" y1="-0.635" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="-6.985" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-6.985" y1="-1.27" x2="-6.985" y2="1.905" width="0.127" layer="21"/>
-<pad name="3" x="-5.08" y="0" drill="1"/>
-<pad name="2" x="-2.54" y="0" drill="1"/>
-<pad name="1" x="0" y="0" drill="1"/>
+<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-9.525" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-9.525" y1="-1.27" x2="-9.525" y2="1.905" width="0.127" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-1.27" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.127" layer="21"/>
+<pad name="3" x="-5.08" y="0" drill="1" diameter="1.778"/>
+<pad name="2" x="-2.54" y="0" drill="1" diameter="1.778"/>
+<pad name="1" x="0" y="0" drill="1" diameter="1.778"/>
+<pad name="4" x="-7.62" y="0" drill="1" diameter="1.778"/>
+<text x="-8.89" y="2.54" size="1.27" layer="25">&gt;Name</text>
 </package>
 </packages>
 <symbols>
-<symbol name="AX">
-<wire x1="-5.08" y1="-7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-7.62" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<text x="-5.08" y="7.874" size="1.27" layer="95">&gt;NAME</text>
-<pin name="RX/TX" x="-10.16" y="5.08" length="middle"/>
-<pin name="VCC" x="-10.16" y="0" length="middle"/>
-<pin name="GND" x="-10.16" y="-5.08" length="middle"/>
+<symbol name="RX">
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<text x="-5.08" y="10.414" size="1.27" layer="95">&gt;NAME</text>
+<pin name="D+" x="-10.16" y="2.54" length="middle"/>
+<pin name="D-" x="-10.16" y="7.62" length="middle"/>
+<pin name="VCC" x="-10.16" y="-2.54" length="middle"/>
+<pin name="GND" x="-10.16" y="-7.62" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="22-03-5035" prefix="J">
-<description>Molex SPOX Vert, Tin (Dynamixel AX/MX Bus)&lt;br&gt;
-tested: YES (arbotix)</description>
+<deviceset name="22-03-5045" prefix="J">
+<description>Molex SPOX Vert, Tin (Dynamixel RX Bus)&lt;br&gt;
+tested: YES (arbotix2)</description>
 <gates>
-<gate name="G$1" symbol="AX" x="0" y="0"/>
+<gate name="G$1" symbol="RX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="5267-3">
+<device name="" package="5267-4">
 <connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="4"/>
 <connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="RX/TX" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
@@ -848,12 +857,12 @@ tested: YES (arbotix)</description>
 <part name="ADCH" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="XIOH" library="pinhead" deviceset="PINHD-2X8" device=""/>
 <part name="XIOL" library="pinhead" deviceset="PINHD-2X8" device=""/>
-<part name="X1" library="molex" deviceset="22-03-5035" device=""/>
-<part name="Y1" library="molex" deviceset="22-03-5035" device=""/>
-<part name="Z1" library="molex" deviceset="22-03-5035" device=""/>
-<part name="X2" library="molex" deviceset="22-03-5035" device=""/>
-<part name="Y2" library="molex" deviceset="22-03-5035" device=""/>
-<part name="Z2" library="molex" deviceset="22-03-5035" device=""/>
+<part name="X1" library="molex" deviceset="22-03-5045" device=""/>
+<part name="X2" library="molex" deviceset="22-03-5045" device=""/>
+<part name="Y1" library="molex" deviceset="22-03-5045" device=""/>
+<part name="Y2" library="molex" deviceset="22-03-5045" device=""/>
+<part name="Z1" library="molex" deviceset="22-03-5045" device=""/>
+<part name="Z2" library="molex" deviceset="22-03-5045" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -977,12 +986,12 @@ tested: YES (arbotix)</description>
 </instance>
 <instance part="XIOH" gate="A" x="238.76" y="129.54"/>
 <instance part="XIOL" gate="A" x="43.18" y="66.04"/>
-<instance part="X1" gate="G$1" x="78.74" y="127"/>
-<instance part="Y1" gate="G$1" x="78.74" y="109.22"/>
-<instance part="Z1" gate="G$1" x="78.74" y="91.44"/>
-<instance part="X2" gate="G$1" x="114.3" y="127"/>
-<instance part="Y2" gate="G$1" x="114.3" y="109.22"/>
-<instance part="Z2" gate="G$1" x="114.3" y="91.44"/>
+<instance part="X1" gate="G$1" x="63.5" y="139.7"/>
+<instance part="X2" gate="G$1" x="99.06" y="139.7"/>
+<instance part="Y1" gate="G$1" x="63.5" y="116.84"/>
+<instance part="Y2" gate="G$1" x="99.06" y="116.84"/>
+<instance part="Z1" gate="G$1" x="63.5" y="93.98"/>
+<instance part="Z2" gate="G$1" x="99.06" y="93.98"/>
 </instances>
 <busses>
 </busses>
@@ -1000,6 +1009,58 @@ tested: YES (arbotix)</description>
 <wire x1="231.14" y1="111.76" x2="215.9" y2="111.76" width="0.1524" layer="91"/>
 <label x="213.36" y="111.76" size="1.778" layer="95"/>
 <pinref part="PWMH" gate="A" pin="7"/>
+</segment>
+<segment>
+<wire x1="55.88" y1="132.08" x2="53.34" y2="132.08" width="0.1524" layer="91"/>
+<label x="40.64" y="132.08" size="1.778" layer="95"/>
+<pinref part="X1" gate="G$1" pin="GND"/>
+<junction x="53.34" y="132.08"/>
+<wire x1="53.34" y1="132.08" x2="40.64" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="55.88" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
+<label x="40.64" y="109.22" size="1.778" layer="95"/>
+<pinref part="Y1" gate="G$1" pin="GND"/>
+<junction x="53.34" y="109.22"/>
+<wire x1="53.34" y1="109.22" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="55.88" y1="86.36" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
+<label x="40.64" y="86.36" size="1.778" layer="95"/>
+<pinref part="Z1" gate="G$1" pin="GND"/>
+<junction x="53.34" y="86.36"/>
+<wire x1="53.34" y1="86.36" x2="40.64" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="91.44" y1="132.08" x2="88.9" y2="132.08" width="0.1524" layer="91"/>
+<label x="78.74" y="132.08" size="1.778" layer="95"/>
+<pinref part="X2" gate="G$1" pin="GND"/>
+<junction x="88.9" y="132.08"/>
+<wire x1="88.9" y1="132.08" x2="78.74" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="91.44" y1="109.22" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
+<label x="78.74" y="109.22" size="1.778" layer="95"/>
+<pinref part="Y2" gate="G$1" pin="GND"/>
+<junction x="88.9" y="109.22"/>
+<wire x1="88.9" y1="109.22" x2="78.74" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="91.44" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
+<label x="78.74" y="86.36" size="1.778" layer="95"/>
+<pinref part="Z2" gate="G$1" pin="GND"/>
+<junction x="88.9" y="86.36"/>
+<wire x1="88.9" y1="86.36" x2="78.74" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="38.1" y1="5.08" x2="17.78" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="POWER" gate="A" pin="5"/>
+<label x="17.78" y="5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="POWER" gate="A" pin="4"/>
+<wire x1="38.1" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
+<label x="17.78" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AREF" class="0">
@@ -1023,11 +1084,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCL" gate="A" pin="1"/>
 </segment>
 <segment>
-<wire x1="71.12" y1="127" x2="68.58" y2="127" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="VCC"/>
-<junction x="68.58" y="127"/>
-<wire x1="68.58" y1="127" x2="60.96" y2="127" width="0.1524" layer="91"/>
-<label x="60.96" y="127" size="1.778" layer="95"/>
+<wire x1="55.88" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
+<label x="40.64" y="142.24" size="1.778" layer="95"/>
+<pinref part="X1" gate="G$1" pin="D+"/>
+<junction x="53.34" y="142.24"/>
+<wire x1="53.34" y1="142.24" x2="40.64" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Y1EN" class="0">
@@ -1037,11 +1098,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCL" gate="A" pin="3"/>
 </segment>
 <segment>
-<wire x1="71.12" y1="104.14" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="GND"/>
-<junction x="68.58" y="104.14"/>
-<wire x1="68.58" y1="104.14" x2="60.96" y2="104.14" width="0.1524" layer="91"/>
-<label x="60.96" y="104.14" size="1.778" layer="95"/>
+<wire x1="55.88" y1="114.3" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
+<label x="40.64" y="114.3" size="1.778" layer="95"/>
+<pinref part="Y1" gate="G$1" pin="VCC"/>
+<junction x="53.34" y="114.3"/>
+<wire x1="53.34" y1="114.3" x2="40.64" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="X1DIR" class="0">
@@ -1051,11 +1112,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCL" gate="A" pin="2"/>
 </segment>
 <segment>
-<wire x1="71.12" y1="132.08" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="RX/TX"/>
-<junction x="68.58" y="132.08"/>
-<wire x1="68.58" y1="132.08" x2="60.96" y2="132.08" width="0.1524" layer="91"/>
-<label x="60.96" y="132.08" size="1.778" layer="95"/>
+<wire x1="55.88" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
+<label x="40.64" y="147.32" size="1.778" layer="95"/>
+<wire x1="53.34" y1="147.32" x2="40.64" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="D-"/>
+<junction x="53.34" y="147.32"/>
 </segment>
 </net>
 <net name="X2STEP" class="0">
@@ -1065,11 +1126,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCL" gate="A" pin="4"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="127" x2="104.14" y2="127" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="VCC"/>
-<junction x="104.14" y="127"/>
-<wire x1="104.14" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
-<label x="96.52" y="127" size="1.778" layer="95"/>
+<wire x1="91.44" y1="142.24" x2="88.9" y2="142.24" width="0.1524" layer="91"/>
+<label x="78.74" y="142.24" size="1.778" layer="95"/>
+<pinref part="X2" gate="G$1" pin="D+"/>
+<junction x="88.9" y="142.24"/>
+<wire x1="88.9" y1="142.24" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="X2DIR" class="0">
@@ -1079,11 +1140,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCL" gate="A" pin="5"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="132.08" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="RX/TX"/>
-<junction x="104.14" y="132.08"/>
-<wire x1="104.14" y1="132.08" x2="96.52" y2="132.08" width="0.1524" layer="91"/>
-<label x="96.52" y="132.08" size="1.778" layer="95"/>
+<wire x1="91.44" y1="147.32" x2="88.9" y2="147.32" width="0.1524" layer="91"/>
+<label x="78.74" y="147.32" size="1.778" layer="95"/>
+<pinref part="X2" gate="G$1" pin="D-"/>
+<junction x="88.9" y="147.32"/>
+<wire x1="88.9" y1="147.32" x2="78.74" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Y2EN" class="0">
@@ -1093,11 +1154,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCL" gate="A" pin="6"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="104.14" x2="104.14" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="Y2" gate="G$1" pin="GND"/>
-<junction x="104.14" y="104.14"/>
-<wire x1="104.14" y1="104.14" x2="96.52" y2="104.14" width="0.1524" layer="91"/>
-<label x="96.52" y="104.14" size="1.778" layer="95"/>
+<wire x1="91.44" y1="114.3" x2="88.9" y2="114.3" width="0.1524" layer="91"/>
+<label x="78.74" y="114.3" size="1.778" layer="95"/>
+<pinref part="Y2" gate="G$1" pin="VCC"/>
+<junction x="88.9" y="114.3"/>
+<wire x1="88.9" y1="114.3" x2="78.74" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Y1STEP" class="0">
@@ -1107,11 +1168,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCL" gate="A" pin="7"/>
 </segment>
 <segment>
-<wire x1="71.12" y1="109.22" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="VCC"/>
-<junction x="68.58" y="109.22"/>
-<wire x1="68.58" y1="109.22" x2="60.96" y2="109.22" width="0.1524" layer="91"/>
-<label x="60.96" y="109.22" size="1.778" layer="95"/>
+<wire x1="55.88" y1="119.38" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
+<label x="40.64" y="119.38" size="1.778" layer="95"/>
+<pinref part="Y1" gate="G$1" pin="D+"/>
+<junction x="53.34" y="119.38"/>
+<wire x1="53.34" y1="119.38" x2="40.64" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Y1DIR" class="0">
@@ -1121,11 +1182,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCL" gate="A" pin="8"/>
 </segment>
 <segment>
-<wire x1="71.12" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="RX/TX"/>
-<junction x="68.58" y="114.3"/>
-<wire x1="68.58" y1="114.3" x2="60.96" y2="114.3" width="0.1524" layer="91"/>
-<label x="60.96" y="114.3" size="1.778" layer="95"/>
+<wire x1="55.88" y1="124.46" x2="53.34" y2="124.46" width="0.1524" layer="91"/>
+<label x="40.64" y="124.46" size="1.778" layer="95"/>
+<pinref part="Y1" gate="G$1" pin="D-"/>
+<junction x="53.34" y="124.46"/>
+<wire x1="53.34" y1="124.46" x2="40.64" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -1157,13 +1218,6 @@ tested: YES (arbotix)</description>
 <pinref part="ADCH" gate="A" pin="2"/>
 </segment>
 </net>
-<net name="ADC8" class="0">
-<segment>
-<wire x1="71.12" y1="33.02" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
-<label x="84.455" y="35.56" size="1.778" layer="95" rot="R180"/>
-<pinref part="ADCH" gate="A" pin="1"/>
-</segment>
-</net>
 <net name="Y2STEP" class="0">
 <segment>
 <wire x1="71.12" y1="38.1" x2="104.14" y2="38.1" width="0.1524" layer="91"/>
@@ -1171,11 +1225,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCH" gate="A" pin="3"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="109.22" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="Y2" gate="G$1" pin="VCC"/>
-<junction x="104.14" y="109.22"/>
-<wire x1="104.14" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91"/>
-<label x="96.52" y="109.22" size="1.778" layer="95"/>
+<wire x1="91.44" y1="119.38" x2="88.9" y2="119.38" width="0.1524" layer="91"/>
+<label x="78.74" y="119.38" size="1.778" layer="95"/>
+<pinref part="Y2" gate="G$1" pin="D+"/>
+<junction x="88.9" y="119.38"/>
+<wire x1="88.9" y1="119.38" x2="78.74" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Y2DIR" class="0">
@@ -1185,11 +1239,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCH" gate="A" pin="4"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="114.3" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="Y2" gate="G$1" pin="RX/TX"/>
-<junction x="104.14" y="114.3"/>
-<wire x1="104.14" y1="114.3" x2="96.52" y2="114.3" width="0.1524" layer="91"/>
-<label x="96.52" y="114.3" size="1.778" layer="95"/>
+<wire x1="91.44" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
+<label x="78.74" y="124.46" size="1.778" layer="95"/>
+<pinref part="Y2" gate="G$1" pin="D-"/>
+<junction x="88.9" y="124.46"/>
+<wire x1="88.9" y1="124.46" x2="78.74" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Z2EN" class="0">
@@ -1199,11 +1253,11 @@ tested: YES (arbotix)</description>
 <pinref part="ADCH" gate="A" pin="5"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="86.36" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="Z2" gate="G$1" pin="GND"/>
-<junction x="104.14" y="86.36"/>
-<wire x1="104.14" y1="86.36" x2="96.52" y2="86.36" width="0.1524" layer="91"/>
-<label x="96.52" y="86.36" size="1.778" layer="95"/>
+<wire x1="91.44" y1="91.44" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<label x="78.74" y="91.44" size="1.778" layer="95"/>
+<pinref part="Z2" gate="G$1" pin="VCC"/>
+<junction x="88.9" y="91.44"/>
+<wire x1="88.9" y1="91.44" x2="78.74" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC13" class="0">
@@ -1730,18 +1784,6 @@ tested: YES (arbotix)</description>
 <pinref part="PWMH" gate="A" pin="6"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<wire x1="38.1" y1="5.08" x2="17.78" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="POWER" gate="A" pin="5"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="POWER" gate="A" pin="4"/>
-<wire x1="38.1" y1="7.62" x2="17.78" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="Z1DIR" class="0">
 <segment>
 <wire x1="48.26" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
@@ -1749,11 +1791,11 @@ tested: YES (arbotix)</description>
 <pinref part="XIOL" gate="A" pin="6"/>
 </segment>
 <segment>
-<wire x1="71.12" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="Z1" gate="G$1" pin="RX/TX"/>
-<junction x="68.58" y="96.52"/>
-<wire x1="68.58" y1="96.52" x2="60.96" y2="96.52" width="0.1524" layer="91"/>
-<label x="60.96" y="96.52" size="1.778" layer="95"/>
+<wire x1="55.88" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
+<label x="40.64" y="101.6" size="1.778" layer="95"/>
+<pinref part="Z1" gate="G$1" pin="D-"/>
+<junction x="53.34" y="101.6"/>
+<wire x1="53.34" y1="101.6" x2="40.64" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Z1STEP" class="0">
@@ -1763,11 +1805,11 @@ tested: YES (arbotix)</description>
 <pinref part="XIOL" gate="A" pin="8"/>
 </segment>
 <segment>
-<wire x1="71.12" y1="91.44" x2="68.58" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="Z1" gate="G$1" pin="VCC"/>
-<junction x="68.58" y="91.44"/>
-<wire x1="68.58" y1="91.44" x2="60.96" y2="91.44" width="0.1524" layer="91"/>
-<label x="60.96" y="91.44" size="1.778" layer="95"/>
+<wire x1="55.88" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
+<label x="40.64" y="96.52" size="1.778" layer="95"/>
+<pinref part="Z1" gate="G$1" pin="D+"/>
+<junction x="53.34" y="96.52"/>
+<wire x1="53.34" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Z2DIR" class="0">
@@ -1777,11 +1819,10 @@ tested: YES (arbotix)</description>
 <pinref part="XIOL" gate="A" pin="9"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="96.52" x2="104.14" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="Z2" gate="G$1" pin="RX/TX"/>
-<junction x="104.14" y="96.52"/>
-<wire x1="104.14" y1="96.52" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
-<label x="96.52" y="96.52" size="1.778" layer="95"/>
+<pinref part="Z2" gate="G$1" pin="D-"/>
+<wire x1="88.9" y1="101.6" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
+<label x="78.74" y="101.6" size="1.778" layer="95"/>
+<junction x="88.9" y="101.6"/>
 </segment>
 </net>
 <net name="Z2STEP" class="0">
@@ -1791,11 +1832,11 @@ tested: YES (arbotix)</description>
 <pinref part="XIOL" gate="A" pin="11"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="91.44" x2="104.14" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="Z2" gate="G$1" pin="VCC"/>
-<junction x="104.14" y="91.44"/>
-<wire x1="104.14" y1="91.44" x2="96.52" y2="91.44" width="0.1524" layer="91"/>
-<label x="96.52" y="91.44" size="1.778" layer="95"/>
+<wire x1="91.44" y1="96.52" x2="88.9" y2="96.52" width="0.1524" layer="91"/>
+<label x="78.74" y="96.52" size="1.778" layer="95"/>
+<pinref part="Z2" gate="G$1" pin="D+"/>
+<junction x="88.9" y="96.52"/>
+<wire x1="88.9" y1="96.52" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="X1EN" class="0">
@@ -1805,11 +1846,11 @@ tested: YES (arbotix)</description>
 <pinref part="XIOL" gate="A" pin="16"/>
 </segment>
 <segment>
-<wire x1="71.12" y1="121.92" x2="68.58" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="GND"/>
-<junction x="68.58" y="121.92"/>
-<wire x1="68.58" y1="121.92" x2="60.96" y2="121.92" width="0.1524" layer="91"/>
-<label x="60.96" y="121.92" size="1.778" layer="95"/>
+<wire x1="55.88" y1="137.16" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
+<label x="40.64" y="137.16" size="1.778" layer="95"/>
+<pinref part="X1" gate="G$1" pin="VCC"/>
+<junction x="53.34" y="137.16"/>
+<wire x1="53.34" y1="137.16" x2="40.64" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="X2EN" class="0">
@@ -1819,11 +1860,11 @@ tested: YES (arbotix)</description>
 <pinref part="XIOL" gate="A" pin="13"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="121.92" x2="104.14" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="X2" gate="G$1" pin="GND"/>
-<junction x="104.14" y="121.92"/>
-<wire x1="104.14" y1="121.92" x2="96.52" y2="121.92" width="0.1524" layer="91"/>
-<label x="96.52" y="121.92" size="1.778" layer="95"/>
+<wire x1="91.44" y1="137.16" x2="88.9" y2="137.16" width="0.1524" layer="91"/>
+<label x="78.74" y="137.16" size="1.778" layer="95"/>
+<pinref part="X2" gate="G$1" pin="VCC"/>
+<junction x="88.9" y="137.16"/>
+<wire x1="88.9" y1="137.16" x2="78.74" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="Z2MAX" class="0">
@@ -1849,11 +1890,16 @@ tested: YES (arbotix)</description>
 </net>
 <net name="Z1EN" class="0">
 <segment>
-<wire x1="71.12" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="Z1" gate="G$1" pin="GND"/>
-<junction x="68.58" y="86.36"/>
-<wire x1="68.58" y1="86.36" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
-<label x="60.96" y="86.36" size="1.778" layer="95"/>
+<wire x1="55.88" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
+<label x="40.64" y="91.44" size="1.778" layer="95"/>
+<pinref part="Z1" gate="G$1" pin="VCC"/>
+<junction x="53.34" y="91.44"/>
+<wire x1="53.34" y1="91.44" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="71.12" y1="33.02" x2="104.14" y2="33.02" width="0.1524" layer="91"/>
+<label x="84.455" y="35.56" size="1.778" layer="95" rot="R180"/>
+<pinref part="ADCH" gate="A" pin="1"/>
 </segment>
 </net>
 </nets>
